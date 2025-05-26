@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvWriteHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✍️ Write a New Blog"
+            android:textSize="24sp"
+            android:textColor="#5D4037"
+            android:fontFamily="@font/love_ya_like_a_sister"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etBlogTitle"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/love_ya_like_a_sister"
+            android:layout_height="wrap_content"
+            android:hint="Enter Blog Title"
+            android:textColor="#5D4037"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etBlogContent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fontFamily="@font/love_ya_like_a_sister"
+            android:gravity="top|start"
+            android:hint="Write your blog content here..."
+            android:textColor="#5D4037"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSaveDraft"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="💾 Save Draft"
+                android:backgroundTint="#B3E5FC"
+                android:textColor="#01579B"
+                android:layout_marginEnd="12dp"
+                android:textSize="16sp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btnPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="🚀 Publish"
+                android:backgroundTint="#A5D6A7"
+                android:textColor="#1B5E20"
+                android:textSize="16sp"
+                android:paddingHorizontal="16dp" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
