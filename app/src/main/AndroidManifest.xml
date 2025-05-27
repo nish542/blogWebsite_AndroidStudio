@@ -13,14 +13,27 @@
         android:theme="@style/Theme.My_blog"
         tools:targetApi="31">
         <activity
-            android:name=".Write_blogActivity"
+            android:name=".WriteBlogActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".read_blogActivity"
+            android:name=".MainActivity"
+            android:exported="true">  <!-- Must be true if it has an intent-filter like this -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.example.mydata" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ReadBlogActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -33,16 +46,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".signinregActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".WelcomeActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
